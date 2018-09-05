@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_light_gray">
+
+    <include
+        android:id="@+id/titleview"
+        layout="@layout/layout_titleview" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleview"
+        android:layout_marginTop="0.5dp"
+        android:layout_marginBottom="0.5dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="60dp">
+
+            <TextView
+                style="@style/text_black_style"
+                android:layout_width="match_parent"
+                android:padding="16dp"
+                android:text="房屋名称" />
+
+            <com.yunju.app.widget.CustomEditTextShowNum
+                android:id="@+id/edit_tenement_describe_name"
+                style="@style/text_black_style"
+                android:layout_width="match_parent" />
+
+            <TextView
+                style="@style/text_black_style"
+                android:layout_width="match_parent"
+                android:paddingBottom="16dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="房屋特色" />
+
+            <com.yunju.app.widget.CustomEditTextShowNum
+                android:id="@+id/edit_tenement_describe_feature"
+                style="@style/text_black_style"
+                android:layout_width="match_parent"/>
+
+            <TextView
+                android:id="@+id/edit_tenement_describe_traffic"
+                style="@style/text_black_style"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:drawablePadding="6dp"
+                android:drawableRight="@drawable/arrow_right"
+                android:padding="16dp"
+                android:text="交通位置（选填）" />
+
+            <TextView
+                android:id="@+id/edit_tenement_describe_periphery"
+                style="@style/text_black_style"
+                android:layout_width="match_parent"
+                android:layout_marginTop="0.5dp"
+                android:background="@color/white"
+                android:drawablePadding="6dp"
+                android:drawableRight="@drawable/arrow_right"
+                android:padding="16dp"
+                android:text="周边介绍（选填）" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/edit_tenement_describe_btnNext"
+            style="@style/general_button_style"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:text="下一步" />
+    </LinearLayout>
+</RelativeLayout>

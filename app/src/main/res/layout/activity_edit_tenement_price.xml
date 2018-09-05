@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_light_gray">
+
+    <include
+        android:id="@+id/titleview"
+        layout="@layout/layout_titleview" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleview"
+        android:layout_marginBottom="0.5dp"
+        android:layout_marginTop="0.5dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="60dp">
+
+            <TextView
+                style="@style/text_black_style"
+                android:layout_width="match_parent"
+                android:padding="16dp"
+                android:text="基础价" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="16dp">
+
+                <TextView
+                    style="@style/text_gray_style"
+                    android:text="基础价" />
+
+                <EditText
+                    style="@style/text_black_style"
+                    android:layout_alignParentRight="true"
+                    android:background="@null"
+                    android:drawablePadding="6dp"
+                    android:drawableRight="@drawable/icon_rmb"
+                    android:inputType="number"
+                    android:hint="请输入价格" />
+            </RelativeLayout>
+
+            <TextView
+                style="@style/text_black_style"
+                android:layout_width="match_parent"
+                android:padding="16dp"
+                android:text="价格规则" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="16dp">
+
+                <TextView
+                    style="@style/text_gray_style"
+                    android:text="付款方式" />
+
+                <TextView
+                    style="@style/text_black_style"
+                    android:layout_alignParentRight="true"
+                    android:text="全额付款" />
+            </RelativeLayout>
+
+            <include layout="@layout/line_view_horizontal" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="16dp">
+
+                <TextView
+                    style="@style/text_gray_style"
+                    android:text="退款规则" />
+
+                <TextView
+                    android:id="@+id/unsubscribe"
+                    style="@style/text_black_style"
+                    android:layout_alignParentRight="true"
+                    android:drawablePadding="6dp"
+                    android:drawableRight="@drawable/arrow_right"
+                    android:text="入住前1天12点前可退" />
+            </RelativeLayout>
+
+            <include layout="@layout/line_view_horizontal" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="16dp">
+
+                <TextView
+                    style="@style/text_gray_style"
+                    android:text="最少入住天数" />
+
+                <TextView
+                    android:id="@+id/unit"
+                    style="@style/text_gray_style"
+                    android:layout_alignParentRight="true"
+                    android:text="天" />
+
+                <EditText
+                    style="@style/text_black_style"
+                    android:layout_marginRight="6dp"
+                    android:layout_toLeftOf="@+id/unit"
+                    android:background="@null"
+                    android:inputType="number"
+                    android:text="1" />
+            </RelativeLayout>
+
+            <TextView
+                style="@style/text_black_style"
+                android:layout_width="match_parent"
+                android:padding="16dp"
+                android:text="押金" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="16dp">
+
+                <TextView
+                    style="@style/text_gray_style"
+                    android:layout_centerVertical="true"
+                    android:text="是否收取押金" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_alignParentRight="true"
+                    android:visibility="gone"
+                    >
+                    <LinearLayout
+                        android:id="@+id/yajin_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        >
+                        <TextView
+                            style="@style/text_gray_style"
+                            android:text="是"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center"
+                            />
+                        <ImageView
+                            android:id="@+id/imgYes"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/reception_rule_selector"
+                            android:layout_marginLeft="5dp"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/yajin_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:visibility="gone"
+                        >
+                        <TextView
+                            style="@style/text_gray_style"
+                            android:text="否"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center"
+                            />
+                        <ImageView
+                            android:id="@+id/imgNo"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/reception_rule_selector"
+                            android:layout_marginLeft="5dp"
+                            />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <RadioGroup
+                    android:id="@+id/edit_tenement_price_radiogroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:visibility="visible"
+                    >
+
+                    <RadioButton
+                        android:id="@+id/edit_tenement_price_rb_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="是" />
+
+                    <RadioButton
+                        android:id="@+id/edit_tenement_price_rb_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="否" />
+                </RadioGroup>
+            </RelativeLayout>
+            <LinearLayout
+                android:id="@+id/linearYaJin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                >
+
+                <TextView
+                    style="@style/text_gray_style"
+                    android:text="押金收取方式" />
+
+                <TextView
+                    style="@style/text_gray_style"
+                    android:layout_alignParentRight="true"
+                    android:text="线上收取" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="16dp">
+
+                <TextView
+                    style="@style/text_gray_style"
+                    android:text="押金" />
+
+                <EditText
+                    android:id="@+id/editYaJin"
+                    style="@style/text_black_style"
+                    android:layout_marginRight="6dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@null"
+                    android:inputType="number"
+                    android:hint="请输入押金" />
+            </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/edit_tenement_price_btnNext"
+            style="@style/general_button_style"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:text="下一步" />
+    </LinearLayout>
+</RelativeLayout>

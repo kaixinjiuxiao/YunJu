@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+
+    <ImageView
+        android:id="@+id/imgChooice"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/img_enter_chooice"
+        />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        >
+
+        <TextView
+            android:id="@+id/enter_name"
+            style="@style/text_black_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:padding="5dp"
+            android:text="name"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/enter_phone"
+            style="@style/text_black_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/enter_name"
+            android:padding="5dp"
+            android:text="name"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/enter_card"
+            style="@style/text_gray_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/enter_name"
+            android:layout_marginLeft="10dp"
+            android:padding="5dp"
+            android:text="name"
+            android:textSize="14sp"
+            />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imgEdit"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/icon_mine_dianping"
+        />
+</LinearLayout>

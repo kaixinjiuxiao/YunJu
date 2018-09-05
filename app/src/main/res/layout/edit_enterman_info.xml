@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/layout_titleview"/>
+
+    <include layout="@layout/line_view_horizontal"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/ic_insurance"
+            />
+        <TextView
+            android:id="@+id/txt1"
+            style="@style/text_black_style"
+            android:layout_toRightOf="@+id/img1"
+            android:text="信息真实完整，免费得住宿意外险"
+            android:gravity="bottom"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            />
+        <TextView
+            style="@style/text_gray_style"
+            android:layout_toRightOf="@+id/img1"
+            android:layout_below="@+id/txt1"
+            android:text="途家住宿意外险，最高理赔11万元"
+            android:padding="5dp"
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            style="@style/text_gray_style"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:text="入住人"
+            />
+
+        <EditText
+            android:id="@+id/edt_addman_name"
+            style="@style/text_gray_style"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="姓名"
+            android:paddingLeft="16dp"
+            />
+    </LinearLayout>
+
+    <include layout="@layout/line_view_horizontal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            style="@style/text_gray_style"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:text="手机号"
+            />
+
+        <EditText
+            android:id="@+id/edt_addman_phone"
+            style="@style/text_gray_style"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:inputType="phone"
+            android:hint="手机号 "
+            android:paddingLeft="16dp"
+            />
+    </LinearLayout>
+
+    <include layout="@layout/line_view_horizontal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            style="@style/text_gray_style"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:text="身份证"
+            />
+
+        <EditText
+            android:id="@+id/edt_addman_card"
+            style="@style/text_gray_style"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="请输入真实证件号码"
+            android:paddingLeft="16dp"
+            />
+    </LinearLayout>
+
+    <include layout="@layout/line_view_horizontal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            style="@style/text_gray_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="@string/edit_enterman_explain1"
+            />
+
+        <TextView
+            style="@style/text_gray_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="@string/edit_enterman_explain2"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnCommit"
+        style="@style/general_button_style"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+
+        android:text="确定"
+        />
+</LinearLayout>

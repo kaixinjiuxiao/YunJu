@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_login"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_titleview" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/text_gray_style"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="60dp"
+                android:layout_marginTop="60dp"
+                android:text="共享住宿"
+                android:textColor="@color/colorPrimary"
+                android:textSize="30sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:layout_margin="16dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/register_phone"
+                    style="@style/text_black_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_edittext_frame_gray"
+                    android:hint="@string/login_hint_phone"
+                    android:inputType="number"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp" />
+
+                <Button
+                    android:id="@+id/register_get_code"
+                    style="@style/general_button_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/general_button_bg"
+                    android:text="@string/login_getcode"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/register_code"
+                style="@style/text_black_style"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="16dp"
+                android:background="@drawable/bg_edittext_frame_gray"
+                android:hint="@string/login_hint_code"
+                android:inputType="number"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp" />
+
+            <EditText
+                android:id="@+id/register_password"
+                style="@style/text_black_style"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="16dp"
+                android:background="@drawable/bg_edittext_frame_gray"
+                android:hint="@string/login_hint_password"
+                android:inputType="textPassword"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp" />
+
+            <EditText
+                android:id="@+id/register_password_again"
+                style="@style/text_black_style"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="16dp"
+                android:background="@drawable/bg_edittext_frame_gray"
+                android:hint="@string/login_hint_password_again"
+                android:inputType="textPassword"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp" />
+
+            <!--<TextView-->
+                <!--android:id="@+id/register_type"-->
+                <!--style="@style/text_black_style"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="45dp"-->
+                <!--android:layout_margin="16dp"-->
+                <!--android:background="@drawable/bg_edittext_frame_gray"-->
+                <!--android:hint="@string/register_type"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:drawableRight="@drawable/arrow_down"-->
+                <!--android:paddingLeft="16dp"-->
+                <!--android:paddingRight="16dp" />-->
+            <Spinner
+                android:id="@+id/register_type"
+                style="@style/text_black_style"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="16dp"
+                android:background="@drawable/bg_edittext_frame_gray"
+                android:hint="@string/register_type"
+                android:visibility="gone"
+                android:gravity="center_vertical"
+                android:drawableRight="@drawable/arrow_down"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:dropDownSelector="@color/colorAccent"
+                android:spinnerMode="dropdown"
+                android:overlapAnchor="false"
+                android:entries="@array/user_type"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/register_agreement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:button="@drawable/checkbox_agreement_selector"
+                    android:checked="true"
+                    android:text=""
+                    android:textColor="@color/textcolor_light" />
+
+                <TextView
+                    android:id="@+id/register_user_agreement"
+                    style="@style/text_gray_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:paddingLeft="10dp"
+                    android:text="@string/login_agreement" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/register_register"
+                style="@style/general_button_style"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="16dp"
+                android:text="@string/register_register" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

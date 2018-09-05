@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RoundImageView">
+        <attr name="isCircle" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="HorizontalListView">
+        <attr name="dividerWidth" format="dimension" />
+        <attr name="android:divider" />
+        <attr name="android:requiresFadingEdge" />
+        <attr name="android:fadingEdgeLength" />
+    </declare-styleable>
+    <declare-styleable name="ATDragView">
+        <attr name="seek_bg_color" format="color" />
+        <attr name="seek_pb_color" format="color" />
+        <attr name="seek_ball_solid_color" format="color" />
+        <attr name="seek_ball_stroke_color" format="color" />
+        <attr name="seek_text_color" format="color" />
+        <attr name="seek_text_size" format="dimension" />
+    </declare-styleable>
+
+</resources>

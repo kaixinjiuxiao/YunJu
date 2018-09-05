@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="60dp">
+
+        <include layout="@layout/layout_titleview" />
+
+        <include layout="@layout/line_view_horizontal" />
+
+        <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:scrollbars="none">-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/text_black_style"
+                android:padding="16dp"
+                android:text="国家或地区　中国大陆" />
+
+            <include layout="@layout/line_view_horizontal" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/text_cy"
+                    style="@style/text_black_style"
+                    android:text="城市　　　　" />
+
+                <TextView
+                    android:id="@+id/edit_tenement_location_city"
+                    style="@style/text_black_style"
+                    android:layout_toRightOf="@+id/text_cy"
+                    android:hint="请选择您的房屋所在地" />
+
+                <TextView
+                    android:id="@+id/edit_tenement_location_locate"
+                    style="@style/text_black_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/icon_location"
+                    android:drawablePadding="4dp"
+                    android:gravity="center_vertical"
+                    android:text="我的位置"
+                    android:textColor="@color/colorPrimary" />
+            </RelativeLayout>
+
+            <include layout="@layout/line_view_horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <TextView
+                    style="@style/text_black_style"
+                    android:text="详细地址　　" />
+
+                <EditText
+                    android:id="@+id/edit_tenement_location_address"
+                    style="@style/text_black_style"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="方便房客找到您的房屋" />
+            </LinearLayout>
+
+            <include layout="@layout/line_view_horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <TextView
+                    style="@style/text_black_style"
+                    android:text="门牌号　　　" />
+
+                <EditText
+                    android:id="@+id/edit_tenement_location_number"
+                    style="@style/text_black_style"
+                    android:width="0dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="房客预订成功后才显示此信息" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="320dp">
+
+                <com.baidu.mapapi.map.MapView
+                    android:id="@+id/edit_tenement_location_mapView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:screenOrientation="portrait" />
+
+                <ImageView
+                    android:id="@+id/edit_tenement_location_marker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    android:src="@drawable/icon_marker" />
+            </FrameLayout>
+        </LinearLayout>
+        <!--</ScrollView>-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/edit_tenement_location_btnNext"
+            style="@style/general_button_style"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:text="下一步" />
+    </LinearLayout>
+</RelativeLayout>

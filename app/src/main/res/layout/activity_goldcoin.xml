@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_titleview" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_marginTop="0.5dp"
+        android:gravity="center"
+        android:padding="30dp">
+
+        <TextView
+            android:id="@+id/goldcoin_total"
+            style="@style/text_black_style"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:textSize="22sp" />
+
+        <TextView
+            style="@style/text_gray_style"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:text="总金币" />
+
+    </LinearLayout>
+    <TextView
+        style="@style/text_gray_style"
+        android:layout_margin="16dp"
+        android:text="@string/goldcoin_tip" />
+
+    <Button
+        android:id="@+id/goldcoin_tixian"
+        style="@style/general_button_style"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="16dp"
+        android:text="@string/goldcoin_btn_tixian"/>
+    <Button
+        android:id="@+id/goldcoin_detail"
+        style="@style/general_frame_button_style"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="16dp"
+        android:text="@string/goldcoin_btn_detail"/>
+</LinearLayout>

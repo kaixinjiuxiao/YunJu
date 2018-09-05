@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/layout_titleview"/>
+
+    <include layout="@layout/line_view_horizontal"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            style="@style/text_black_style"
+            android:text="推荐人"
+            android:textSize="14sp"
+            />
+        <TextView
+            android:id="@+id/info_recommend"
+            style="@style/text_gray_style"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="16dp"
+            android:textSize="14sp"
+            />
+    </RelativeLayout>
+    <include layout="@layout/line_view_horizontal"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            style="@style/text_black_style"
+            android:text="联系电话"
+            android:textSize="14sp"
+            />
+        <TextView
+            android:id="@+id/info_mobile"
+            style="@style/text_gray_style"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="16dp"
+            android:textSize="14sp"
+            />
+    </RelativeLayout>
+    <include layout="@layout/line_view_horizontal"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            style="@style/text_black_style"
+            android:text="提现银行"
+            android:textSize="14sp"
+            />
+        <TextView
+            android:id="@+id/info_bank"
+            style="@style/text_gray_style"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="16dp"
+            android:textSize="14sp"
+            android:textColor="@color/colorPrimary"
+            />
+    </RelativeLayout>
+    <include layout="@layout/line_view_horizontal"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            style="@style/text_black_style"
+            android:text="提现卡号"
+            android:textSize="14sp"
+            />
+        <TextView
+            android:id="@+id/info_bank_code"
+            style="@style/text_gray_style"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="16dp"
+            android:textSize="14sp"
+            />
+    </RelativeLayout>
+    <include layout="@layout/line_view_horizontal"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            style="@style/text_black_style"
+            android:text="实名认证"
+            android:textSize="14sp"
+            />
+        <TextView
+            android:id="@+id/info_authentication"
+            style="@style/text_gray_style"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="16dp"
+            android:textSize="14sp"
+            android:textColor="@color/colorPrimary"
+            />
+    </RelativeLayout>
+    <include layout="@layout/line_view_horizontal"/>
+    <Button
+        android:id="@+id/btnLoginOut"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="100dp"
+        android:textColor="@color/white"
+        style="@style/general_button_style"
+        android:text="退出登录"
+        />
+</LinearLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_light_gray">
+
+    <include
+        android:id="@+id/titleview"
+        layout="@layout/layout_titleview" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleview"
+        android:layout_marginBottom="0.5dp"
+        android:layout_marginTop="0.5dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/text_black_style"
+                android:layout_width="match_parent"
+                android:padding="16dp"
+                android:text="空调" />
+            <RadioGroup
+                android:id="@+id/edit_tenement_facility_airconditioning_radiogroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:layout_gravity="center_vertical">
+
+                <RadioButton
+                    android:id="@+id/edit_tenement_facility_airconditioning_rb_all"
+                    style="@style/text_black_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="全部客厅卧室有空调" />
+
+                <RadioButton
+                    android:id="@+id/edit_tenement_facility_airconditioning_rb_part"
+                    style="@style/text_black_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="部分客厅卧室有空调" />
+            </RadioGroup>
+            <include layout="@layout/line_view_horizontal"/>
+            <TextView
+                style="@style/text_black_style"
+                android:layout_width="match_parent"
+                android:padding="16dp"
+                android:text="热水" />
+            <RadioGroup
+                android:id="@+id/edit_tenement_facility_hotwater_radiogroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:layout_gravity="center_vertical">
+
+                <RadioButton
+                    android:id="@+id/edit_tenement_facility_hotwater_rb_all"
+                    style="@style/text_black_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="全天热水" />
+
+                <RadioButton
+                    android:id="@+id/edit_tenement_facility_hotwater_rb_part"
+                    style="@style/text_black_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="分时段热水" />
+            </RadioGroup>
+            <include layout="@layout/line_view_horizontal"/>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/edit_tenement_facilityrecyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="100dp"
+                />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/edit_tenement_facility_btnNext"
+            style="@style/general_button_style"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:text="下一步" />
+    </LinearLayout>
+</RelativeLayout>

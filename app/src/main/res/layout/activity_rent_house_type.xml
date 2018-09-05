@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_titleview"/>
+
+    <RelativeLayout
+        android:id="@+id/rent_house_type_whole"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:padding="20dp"
+        android:background="@color/white">
+        <ImageView
+            android:id="@+id/iv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_house_blue"/>
+        <TextView
+            android:id="@+id/tv1"
+            style="@style/text_black_style"
+            android:layout_toRightOf="@+id/iv1"
+            android:layout_marginLeft="20dp"
+            android:textSize="18sp"
+            android:text="整套房屋"/>
+        <TextView
+            style="@style/text_gray_style"
+            android:layout_toRightOf="@+id/iv1"
+            android:layout_below="@+id/tv1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="8dp"
+            android:textSize="14sp"
+            android:text="整套房屋出租"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/arrow_right"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rent_house_type_single"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:padding="20dp"
+        android:background="@color/white">
+        <ImageView
+            android:id="@+id/iv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_house_single_blue"
+            android:layout_centerVertical="true" />
+        <TextView
+            android:id="@+id/tv2"
+            style="@style/text_black_style"
+            android:layout_toRightOf="@+id/iv2"
+            android:layout_marginLeft="20dp"
+            android:textSize="18sp"
+            android:text="独立单间"/>
+        <TextView
+            style="@style/text_gray_style"
+            android:layout_toRightOf="@+id/iv2"
+            android:layout_below="@+id/tv2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="8dp"
+            android:textSize="14sp"
+            android:text="整套房屋中的独立卧室"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/arrow_right"
+            android:id="@+id/imageView" />
+    </RelativeLayout>
+
+    <TextView
+        style="@style/text_black_style"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/colorPrimary"
+        android:text="独立单间仅限深圳、西安，更多城市敬请期待。"/>
+
+</LinearLayout>

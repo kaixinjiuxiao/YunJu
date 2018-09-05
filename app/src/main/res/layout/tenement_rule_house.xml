@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <TextView
+            android:id="@+id/cancelAction"
+            style="@style/text_black_style"
+            android:layout_centerVertical="true"
+            android:paddingLeft="16dp"
+            android:text="取消"
+            />
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/text_black_style"
+            android:layout_centerInParent="true"
+            android:text="请选择"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/sureAction"
+            style="@style/text_black_style"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="16dp"
+            android:text="确定"
+            android:textColor="@color/colorPrimary"
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/normal_0"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+
+            <com.yunju.app.widget.WheelView
+                android:id="@+id/wheelView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearRule"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone"
+            >
+
+            <com.yunju.app.widget.WheelView
+                android:id="@+id/wheelView2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+
+                />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

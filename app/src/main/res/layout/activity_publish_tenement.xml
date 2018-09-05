@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/titleview"
+        layout="@layout/layout_titleview" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/titleview"
+        android:background="@color/gray" />
+
+    <com.yunju.app.widget.HeadZoomScrollView
+        android:id="@+id/publish_tenement_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/line"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:paddingBottom="70dp">
+
+            <ImageView
+                android:id="@+id/publish_tenement_image"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:fitsSystemWindows="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bg_addpic" />
+
+            <RelativeLayout
+                android:id="@+id/publish_tenement_location_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/text_location"
+                    style="@style/text_black_style"
+                    android:text="房屋位置"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/publish_tenement_location"
+                    style="@style/text_gray_style"
+                    android:layout_below="@id/text_location"
+                    android:layout_marginTop="4dp"
+                    android:hint="填写房屋位置" />
+
+                <TextView
+                    android:id="@+id/publish_tenement_location_status"
+                    style="@style/text_black_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="6dp"
+                    android:drawableRight="@drawable/arrow_right"
+                    android:gravity="center_vertical"
+                    android:text="待完善"
+                    android:textColor="@color/colorPrimary" />
+            </RelativeLayout>
+
+            <include layout="@layout/line_view_horizontal" />
+
+            <RelativeLayout
+                android:id="@+id/publish_tenement_detail_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/text_detail"
+                    style="@style/text_black_style"
+                    android:text="房屋详情"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/publish_tenement_detail"
+                    style="@style/text_gray_style"
+                    android:layout_below="@id/text_detail"
+                    android:layout_marginTop="4dp"
+                    android:hint="填写房屋的基本信息" />
+
+                <TextView
+                    android:id="@+id/publish_tenement_detail_status"
+                    style="@style/text_black_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="6dp"
+                    android:drawableRight="@drawable/arrow_right"
+                    android:gravity="center_vertical"
+                    android:text="待完善"
+                    android:textColor="@color/colorPrimary" />
+            </RelativeLayout>
+
+            <include layout="@layout/line_view_horizontal" />
+
+            <RelativeLayout
+                android:id="@+id/publish_tenement_describe_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/text_describe"
+                    style="@style/text_black_style"
+                    android:text="房屋描述"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/publish_tenement_describe"
+                    style="@style/text_gray_style"
+                    android:layout_below="@id/text_describe"
+                    android:layout_marginTop="4dp"
+                    android:hint="起一个醒目的名字，描述房屋的优势" />
+
+                <TextView
+                    android:id="@+id/publish_tenement_describe_status"
+                    style="@style/text_black_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="6dp"
+                    android:drawableRight="@drawable/arrow_right"
+                    android:gravity="center_vertical"
+                    android:text="待完善"
+                    android:textColor="@color/colorPrimary" />
+            </RelativeLayout>
+
+            <include layout="@layout/line_view_horizontal" />
+
+            <RelativeLayout
+                android:id="@+id/publish_tenement_facility_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/text_facility"
+                    style="@style/text_black_style"
+                    android:text="设施服务"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/publish_tenement_facility"
+                    style="@style/text_gray_style"
+                    android:layout_below="@id/text_facility"
+                    android:layout_marginTop="4dp"
+                    android:hint="有哪些配套设施和便利服务" />
+
+                <TextView
+                    android:id="@+id/publish_tenement_facility_status"
+                    style="@style/text_black_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="6dp"
+                    android:drawableRight="@drawable/arrow_right"
+                    android:gravity="center_vertical"
+                    android:text="待完善"
+                    android:textColor="@color/colorPrimary" />
+            </RelativeLayout>
+
+            <include layout="@layout/line_view_horizontal" />
+
+            <RelativeLayout
+                android:id="@+id/publish_tenement_rule_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/text_rule"
+                    style="@style/text_black_style"
+                    android:text="入住规则"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/publish_tenement_rule"
+                    style="@style/text_gray_style"
+                    android:layout_below="@id/text_rule"
+                    android:layout_marginTop="4dp"
+                    android:hint="对房客入住时的规则说明" />
+
+                <TextView
+                    android:id="@+id/publish_tenement_rule_status"
+                    style="@style/text_black_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="6dp"
+                    android:drawableRight="@drawable/arrow_right"
+                    android:gravity="center_vertical"
+                    android:text="待完善"
+                    android:textColor="@color/colorPrimary" />
+            </RelativeLayout>
+
+            <include layout="@layout/line_view_horizontal" />
+
+            <RelativeLayout
+                android:id="@+id/publish_tenement_price_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/text_price"
+                    style="@style/text_black_style"
+                    android:text="价格设置"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/publish_tenement_price"
+                    style="@style/text_gray_style"
+                    android:layout_below="@id/text_price"
+                    android:layout_marginTop="4dp"
+                    android:hint="给房屋定一个合理的价格" />
+
+                <TextView
+                    android:id="@+id/publish_tenement_price_status"
+                    style="@style/text_black_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="6dp"
+                    android:drawableRight="@drawable/arrow_right"
+                    android:gravity="center_vertical"
+                    android:text="待完善"
+                    android:textColor="@color/colorPrimary" />
+            </RelativeLayout>
+
+            <include layout="@layout/line_view_horizontal" />
+
+            <RelativeLayout
+                android:id="@+id/publish_tenement_identity_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/text_identity"
+                    style="@style/text_black_style"
+                    android:text="身份验真"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/publish_tenement_identity"
+                    style="@style/text_gray_style"
+                    android:layout_below="@id/text_identity"
+                    android:layout_marginTop="4dp"
+                    android:hint="完善您个人的身份信息" />
+
+                <TextView
+                    android:id="@+id/publish_tenement_identity_status"
+                    style="@style/text_black_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="6dp"
+                    android:drawableRight="@drawable/arrow_right"
+                    android:gravity="center_vertical"
+                    android:text="待完善"
+                    android:textColor="@color/colorPrimary" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </com.yunju.app.widget.HeadZoomScrollView>
+
+    <LinearLayout
+        android:id="@+id/layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/publish_tenement_btnDelete"
+            style="@style/general_frame_button_style"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="2"
+            android:text="删除" />
+
+        <Button
+            android:id="@+id/publish_tenement_btnSubmit"
+            style="@style/general_button_style"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:text="发布" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_above="@id/layout_bottom"
+        android:background="@color/gray" />
+</RelativeLayout>

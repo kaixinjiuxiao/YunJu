@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_light_gray">
+
+    <include layout="@layout/layout_titleview" />
+    <include layout="@layout/line_view_horizontal"/>
+    <com.yunju.app.widget.CustomEditTextShowNum
+        android:id="@+id/edit_text_content"
+        style="@style/text_black_style"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>

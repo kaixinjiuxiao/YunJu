@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_login">
+
+    <include layout="@layout/layout_titleview"/>
+    <TextView
+        style="@style/text_gray_style"
+        android:text="共享住宿"
+        android:textSize="30sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="60dp"/>
+
+    <EditText
+        android:id="@+id/login_phone"
+        style="@style/text_black_style"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/bg_edittext_frame_gray"
+        android:inputType="number"
+        android:hint="@string/login_hint_phone"/>
+
+    <EditText
+        android:id="@+id/login_password"
+        style="@style/text_black_style"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/bg_edittext_frame_gray"
+        android:inputType="textPassword"
+        android:hint="@string/login_hint_password"/>
+
+    <Button
+        android:id="@+id/login_login"
+        style="@style/general_button_style"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="16dp"
+        android:text="@string/login_login"/>
+
+</LinearLayout>

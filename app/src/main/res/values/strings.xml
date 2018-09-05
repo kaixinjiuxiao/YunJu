@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">晚醉住宿</string>
+    <string name="tab_1">首页</string>
+    <string name="tab_2">收藏</string>
+    <string name="tab_3">消息</string>
+    <string name="tab_4">订单</string>
+    <string name="tab_5">我的</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="pop_calendar">请选择离店日期</string>
+    <string name="edit_order_rule1" formatted="false">限时退：取消订单将收取100%房费作为违约金支付给房东；入住后若提前退房，将收取100%剩余房费作为违约金支付给房东。</string>
+    <string name="edit_order_rule2">请根据实际入住人数填写，人数不同房屋报价也有所不同。</string>
+    <string name="edit_order_rule3">在线支付押金，到店后无需再支付，住房押金离店后，如无需扣款，将原方式退回。</string>
+    <string name="login_hint_phone">请输入手机号码</string>
+    <string name="login_getcode">获取验证码</string>
+    <string name="login_hint_password">请输入密码</string>
+    <string name="login_hint_password_again">请重输密码</string>
+    <string name="login_hint_code">请输入验证码</string>
+    <string name="login_agreement">同意《共享住宿软件许可及服务协议》</string>
+    <string name="login_login">登录</string>
+    <string name="register_register">注册</string>
+    <string name="register_type">请选择身份</string>
+    <string name="goto_login_text_collection">登录后可查看管理您收藏的精美房屋</string>
+    <string name="goto_login_text_order">登录后可查询您在云居所有的订单</string>
+    <string name="goldcoin_tip">提示：工作日可提现。</string>
+    <string name="goldcoin_btn_tixian">金币提现</string>
+    <string name="goldcoin_btn_detail">金币明细</string>
+    <string name="edit_enterman_explain1">根据公安局酒店经营管理条例，入住经营性质的酒店/民宿，需要提供入住人的身份证明信息。</string>
+    <string name="edit_enterman_explain2">入住人的身份信息只用于必要的身份核实和保险理赔事项，晚醉住宿会为您严格保密。</string>
+    <string name="order_details_tishi1"> 12:00 办理入住，早到可能需要等待。</string>
+    <string name="order_details_tishi2"> 12:00 之前办理退房，如需延迟退房证书与商户协商。</string>
+    <string name="order_details_tishi3">未到店或未入住时，请勿轻易纯正转账方式支付押金或其他费用，以免上当受骗！</string>
+    <string name="yajin_explain1">云居通过线上收取您的押金，保障您的资金安全。</string>
+    <string name="yajin_explain2">到店无需再支付押金，如取消订单或无人入住。押金将全额原路退回。</string>
+    <string name="yajin_explain3">入住完成后，如没发生扣除押金的情况，房东会操作押金全额退回；如房东申请扣除押金，需要您同意后才会扣除。</string>
+    <string name="yajin_explain4">房东将在您离店次日18:00前操作押金，超时未操作押金将全额自动退回。</string>
+    <string name="yajin_explain5">若您对押金还有疑问，可前往云居客服中心获取更多帮助。</string>
+    <string name="tixian_explain">提示 ：推荐奖励金币每周一方可提现，领导奖励金币每周二方可提现，成就奖励金币每月一号方可提现</string>
+</resources>

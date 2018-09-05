@@ -1,0 +1,176 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:visibility="visible">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:contentScrim="@android:color/transparent"
+            app:expandedTitleGravity="top"
+            app:expandedTitleMarginEnd="64dp"
+            app:expandedTitleMarginStart="48dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/pic_main" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp">
+
+                        <TextView
+                            android:id="@+id/fragment_main_city"
+                            style="@style/text_black_style"
+                            android:layout_centerVertical="true"
+                            android:text="所在地"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/fragment_main_locate"
+                            style="@style/text_black_style"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:drawableLeft="@drawable/icon_location"
+                            android:drawablePadding="4dp"
+                            android:gravity="center_vertical"
+                            android:text="我的位置"
+                            android:textColor="@color/colorPrimary" />
+                    </RelativeLayout>
+
+                    <include layout="@layout/line_view_horizontal" />
+
+                    <RelativeLayout
+                        android:id="@+id/fragment_main_selectDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="16dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/text_gray_style"
+                                android:text="入住" />
+
+                            <TextView
+                                android:id="@+id/fragment_main_checkinDate"
+                                style="@style/text_black_style"
+                                android:layout_marginTop="4dp"
+                                android:text=""
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/fragment_main_stayNum"
+                            style="@style/text_gray_style"
+                            android:layout_centerInParent="true"
+                            android:text="共1晚" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/text_gray_style"
+                                android:text="离店"
+                                android:layout_gravity="right"
+                                />
+
+                            <TextView
+                                android:id="@+id/fragment_main_checkoutDate"
+                                style="@style/text_black_style"
+                                android:layout_marginTop="4dp"
+                                android:text=""
+                                android:textSize="16sp" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <include layout="@layout/line_view_horizontal" />
+                    <TextView
+                        android:id="@+id/fragment_main_person"
+                        style="@style/text_black_style"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/general_textview_bg_pressed"
+                        android:drawableRight="@drawable/arrow_right"
+                        android:paddingBottom="16dp"
+                        android:paddingTop="16dp"
+                        android:text="不限人数"
+                        android:textSize="16sp" />
+                    <include layout="@layout/line_view_horizontal" />
+                    <Button
+                        android:id="@+id/fragment_main_searchBtn"
+                        style="@style/general_button_style"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="2dp"
+                        android:layout_height="40dp"
+                        android:text="开始查找" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:visibility="gone"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/fragment_main_tabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:background="@color/white"
+                app:tabBackground="@color/white"
+                app:tabGravity="fill"
+                app:tabIndicatorColor="@color/colorPrimary"
+                app:tabIndicatorHeight="2dp"
+                app:tabMode="fixed"
+                app:tabSelectedTextColor="@color/colorPrimary"
+                app:tabTextColor="@color/textcolor_dark" />
+
+            <com.yunju.app.widget.SlideViewPager
+                android:id="@+id/fragment_main_viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:background="@color/white" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

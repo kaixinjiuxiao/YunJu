@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/popwindow_filter_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/close_gray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="筛选"
+            android:textColor="@color/textcolor_666666"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/popwindow_filter_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="清空条件"
+            android:textColor="@color/textcolor_666666"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="80dp">
+
+                <TextView
+                    style="@style/text_black_style"
+                    android:layout_margin="16dp"
+                    android:text="房屋级别"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:button="@null"
+                        android:drawablePadding="6dp"
+                        android:drawableTop="@drawable/checkbox_button_haohua_selector"
+                        android:text="豪华"
+                        android:textColor="@color/tab_textcolor_selector"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:button="@null"
+                        android:drawablePadding="6dp"
+                        android:drawableTop="@drawable/checkbox_button_jingpin_selector"
+                        android:text="精品"
+                        android:textColor="@color/tab_textcolor_selector"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:button="@null"
+                        android:drawablePadding="6dp"
+                        android:drawableTop="@drawable/checkbox_button_shushi_selector"
+                        android:text="舒适"
+                        android:textColor="@color/tab_textcolor_selector"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <include layout="@layout/line_view_horizontal" />
+
+                <TextView
+                    style="@style/text_black_style"
+                    android:layout_margin="16dp"
+                    android:text="推荐"
+                    android:textSize="14sp" />
+
+                <GridView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="16dp" />
+
+                <include layout="@layout/line_view_horizontal" />
+
+                <TextView
+                    style="@style/text_black_style"
+                    android:layout_margin="16dp"
+                    android:text="户型"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="16dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_button_frame_gray"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:paddingBottom="6dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:paddingTop="6dp"
+                        android:text="一室"
+                        android:textColor="@color/tab_textcolor_selector"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="16dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_button_frame_gray"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:paddingBottom="6dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:paddingTop="6dp"
+                        android:text="二室"
+                        android:textColor="@color/tab_textcolor_selector"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="16dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_button_frame_gray"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:paddingBottom="6dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:paddingTop="6dp"
+                        android:text="三室"
+                        android:textColor="@color/tab_textcolor_selector"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_button_frame_gray"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:paddingBottom="6dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:paddingTop="6dp"
+                        android:text="四室及以上"
+                        android:textColor="@color/tab_textcolor_selector"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <include layout="@layout/line_view_horizontal" />
+
+                <TextView
+                    style="@style/text_black_style"
+                    android:layout_margin="16dp"
+                    android:text="房价"
+                    android:textSize="14sp" />
+
+                <com.yunju.app.widget.ATDragView
+                    android:id="@+id/popwindow_filter_dragview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp" />
+
+                <include layout="@layout/line_view_horizontal" />
+
+                <TextView
+                    style="@style/text_black_style"
+                    android:layout_margin="16dp"
+                    android:text="配套"
+                    android:textSize="14sp" />
+
+                <include layout="@layout/line_view_horizontal" />
+
+                <TextView
+                    style="@style/text_black_style"
+                    android:layout_margin="16dp"
+                    android:text="入住人数"
+                    android:textSize="14sp" />
+                <com.yunju.app.widget.AmountView
+                    android:id="@+id/popwindow_filter_amountview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <include layout="@layout/line_view_horizontal" />
+
+            <Button
+                android:id="@+id/popwindow_filter_submit"
+                style="@style/general_button_style"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="16dp"
+                android:text="确定" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

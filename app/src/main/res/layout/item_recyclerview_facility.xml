@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center_horizontal">
+    <CheckBox
+        android:id="@+id/item_recyclerview_facility_checkbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_horizontal"
+        android:button="@null"
+        android:drawablePadding="6dp"
+        android:drawableTop="@drawable/checkbox_button_haohua_selector"
+        android:text="无线网络"
+        android:textColor="@color/tab_textcolor_selector"
+        android:textSize="12sp" />
+</LinearLayout>

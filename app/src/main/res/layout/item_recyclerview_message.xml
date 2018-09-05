@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="16dp">
+    <TextView
+        android:id="@+id/item_message_title"
+        style="@style/text_black_style"
+        android:textSize="16sp"
+        android:text="" />
+    <TextView
+        android:id="@+id/item_message_date"
+        style="@style/text_gray_style"
+        android:layout_alignParentRight="true"
+        android:text="" />
+    <TextView
+        android:id="@+id/item_message_content"
+        style="@style/text_gray_style"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/item_message_title"
+        android:text="" />
+</RelativeLayout>

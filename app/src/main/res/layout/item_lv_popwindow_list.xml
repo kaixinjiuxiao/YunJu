@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="16dp">
+    <TextView
+        android:id="@+id/item_lv_popwindow_list_itemText"
+        style="@style/text_black_style"
+        android:layout_centerVertical="true"
+        android:text="推荐排序"/>
+    <ImageView
+        android:id="@+id/item_lv_popwindow_list_ivCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:src="@drawable/icon_gou"/>
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                >
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:layout_marginTop="30dp"
+        app:cardCornerRadius="10dp"
+        app:contentPadding="10dp"
+        android:background="@color/white"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/item_balance_date"
+                style="@style/text_black_style"
+                android:textSize="14sp"
+                />
+            <TextView
+                android:id="@+id/item_balance_week"
+                style="@style/text_black_style"
+                android:layout_toRightOf="@+id/item_balance_date"
+                android:textSize="14sp"
+                android:layout_marginLeft="5dp"
+                />
+            <TextView
+                android:id="@+id/item_balance_content"
+                style="@style/text_gray_style"
+                android:layout_marginTop="6dp"
+                android:layout_below="@+id/item_balance_week"
+                 />
+            <TextView
+                android:id="@+id/item_balance_money"
+                style="@style/text_gray_style"
+                android:layout_marginTop="16dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/colorPrimary"
+                 />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

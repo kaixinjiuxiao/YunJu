@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_light_gray"
+    android:id="@+id/tenmentRule"
+    >
+
+    <include
+        android:id="@+id/titleview"
+        layout="@layout/layout_titleview" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleview"
+        android:layout_marginBottom="0.5dp"
+        android:layout_marginTop="0.5dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/text_black_style"
+                android:layout_width="match_parent"
+                android:padding="16dp"
+                android:text="入离时间" />
+
+            <RelativeLayout
+                android:id="@+id/edit_tenement_rule_checkin_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:padding="16dp">
+
+                <TextView
+                    style="@style/text_gray_style"
+                    android:text="房客入住" />
+
+                <TextView
+                    android:id="@+id/edit_tenement_rule_checkinDate"
+                    style="@style/text_black_style"
+                    android:layout_alignParentRight="true"
+                    android:drawablePadding="6dp"
+                    android:drawableRight="@drawable/arrow_right"
+                    android:text="请选择"
+                    />
+            </RelativeLayout>
+
+            <include layout="@layout/line_view_horizontal" />
+
+            <RelativeLayout
+                android:id="@+id/edit_tenement_rule_checkout_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:padding="16dp">
+
+                <TextView
+                    style="@style/text_gray_style"
+                    android:text="房客离店" />
+
+                <TextView
+                    android:id="@+id/edit_tenement_rule_checkoutDate"
+                    style="@style/text_black_style"
+                    android:layout_alignParentRight="true"
+                    android:drawablePadding="6dp"
+                    android:drawableRight="@drawable/arrow_right"
+                    android:text="请选择"
+                    />
+            </RelativeLayout>
+
+            <TextView
+                style="@style/text_black_style"
+                android:layout_width="match_parent"
+                android:padding="16dp"
+                android:text="接待时间" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/reception_time_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/edit_tenement_rule_addTime"
+                style="@style/text_black_style"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:drawableLeft="@drawable/icon_add_ring"
+                android:drawablePadding="6dp"
+                android:gravity="center_vertical"
+                android:padding="16dp"
+                android:text="添加新时间段" />
+
+            <TextView
+                style="@style/text_black_style"
+                android:layout_width="match_parent"
+                android:padding="16dp"
+                android:text="房屋清洁" />
+
+            <RelativeLayout
+                android:id="@+id/edit_tenement_rule_clean_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:padding="16dp">
+
+                <TextView
+                    style="@style/text_gray_style"
+                    android:text="多久提供打扫卫生" />
+
+                <TextView
+                    android:id="@+id/edit_tenement_rule_clean"
+                    style="@style/text_black_style"
+                    android:layout_alignParentRight="true"
+                    android:drawablePadding="6dp"
+                    android:drawableRight="@drawable/arrow_right"
+                    android:text="1客1扫"
+                    />
+            </RelativeLayout>
+
+            <include layout="@layout/line_view_horizontal" />
+
+            <RelativeLayout
+                android:id="@+id/edit_tenement_rule_replaceSheet_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:padding="16dp">
+
+                <TextView
+                    style="@style/text_gray_style"
+                    android:text="多久提供被单更换" />
+
+                <TextView
+                    android:id="@+id/edit_tenement_rule_replaceSheet"
+                    style="@style/text_black_style"
+                    android:layout_alignParentRight="true"
+                    android:drawablePadding="6dp"
+                    android:drawableRight="@drawable/arrow_right"
+                    android:text="1客1换"
+                    />
+            </RelativeLayout>
+
+            <TextView
+                style="@style/text_black_style"
+                android:layout_width="match_parent"
+                android:padding="16dp"
+                android:text="其他信息" />
+
+            <TextView
+                android:id="@+id/edit_tenement_rule_reception"
+                style="@style/text_black_style"
+                android:layout_width="match_parent"
+                android:drawablePadding="6dp"
+                android:drawableRight="@drawable/arrow_right"
+                android:padding="16dp"
+                android:text="接待要求" />
+
+            <include layout="@layout/line_view_horizontal" />
+
+            <TextView
+                android:id="@+id/edit_tenement_rule_remind"
+                style="@style/text_black_style"
+                android:layout_width="match_parent"
+                android:drawablePadding="6dp"
+                android:drawableRight="@drawable/arrow_right"
+                android:padding="16dp"
+                android:text="其他入住提示" />
+            <TextView
+
+                style="@style/text_black_style"
+                android:layout_width="match_parent"
+                android:drawablePadding="6dp"
+                android:drawableRight="@drawable/arrow_right"
+                android:padding="16dp"
+                android:text="其他入住提示" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/edit_tenement_rule_btnNext"
+            style="@style/general_button_style"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:text="下一步" />
+    </LinearLayout>
+</RelativeLayout>

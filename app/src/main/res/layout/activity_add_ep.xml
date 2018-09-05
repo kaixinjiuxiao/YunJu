@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/layout_titleview"/>
+
+    <include layout="@layout/line_view_horizontal"/>
+
+    <RelativeLayout
+        android:id="@+id/relativeAdd"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/click_selected"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/icon_add_parimy"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+
+                android:text="添加入住人"
+                android:textColor="@color/colorPrimary"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+    <include layout="@layout/line_view_horizontal"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/enterManRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+        <TextView
+            android:id="@+id/noEnterMan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/text_black_style"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:text="暂无常用入住人"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnCommit"
+        style="@style/general_button_style"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:text="确定"
+        />
+</LinearLayout>

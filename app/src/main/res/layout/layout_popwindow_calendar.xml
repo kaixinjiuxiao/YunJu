@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/popwindow_calendar_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/close_gray" />
+
+        <TextView
+            android:id="@+id/popwindow_calendar_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="清空"
+            android:textColor="@color/textcolor_666666"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/text_gray_style"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="入住日期" />
+
+            <TextView
+                android:id="@+id/popwindow_calendar_checkInDate"
+                style="@style/text_black_style"
+                android:layout_marginTop="6dp"
+                android:text=""
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/popwindow_calendar_checkInWeek"
+                style="@style/text_black_style"
+                android:layout_marginTop="6dp"
+                android:text="周五"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/popwindow_calendar_stayNum"
+                style="@style/text_gray_style"
+                android:layout_gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:text="共2晚" />
+
+            <View
+                android:layout_width="60dp"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="6dp"
+                android:background="@color/colorPrimary" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/text_gray_style"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="离店日期" />
+
+            <TextView
+                android:id="@+id/popwindow_calendar_checkOutDate"
+                style="@style/text_black_style"
+                android:layout_marginTop="6dp"
+                android:text=""
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/popwindow_calendar_checkOutWeek"
+                style="@style/text_black_style"
+                android:layout_marginTop="6dp"
+                android:text="周日"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!--<include layout="@layout/line_view_horizontal" />-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:paddingBottom="4dp"-->
+        <!--android:paddingLeft="16dp"-->
+        <!--android:paddingRight="16dp"-->
+        <!--android:paddingTop="4dp">-->
+
+        <!--<TextView-->
+            <!--style="@style/text_gray_style"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:text="日"-->
+            <!--android:textSize="16sp" />-->
+
+        <!--<TextView-->
+            <!--style="@style/text_gray_style"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:text="一"-->
+            <!--android:textSize="16sp" />-->
+
+        <!--<TextView-->
+            <!--style="@style/text_gray_style"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:text="二"-->
+            <!--android:textSize="16sp" />-->
+
+        <!--<TextView-->
+            <!--style="@style/text_gray_style"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:text="三"-->
+            <!--android:textSize="16sp" />-->
+
+        <!--<TextView-->
+            <!--style="@style/text_gray_style"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:text="四"-->
+            <!--android:textSize="16sp" />-->
+
+        <!--<TextView-->
+            <!--style="@style/text_gray_style"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:text="五"-->
+            <!--android:textSize="16sp" />-->
+
+        <!--<TextView-->
+            <!--style="@style/text_gray_style"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:text="六"-->
+            <!--android:textSize="16sp" />-->
+    <!--</LinearLayout>-->
+
+    <!--<include layout="@layout/line_view_horizontal" />-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--<ListView-->
+            <!--android:id="@+id/popwindow_calendar_listview"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:dividerHeight="1dp"-->
+            <!--android:padding="16dp"-->
+            <!--android:scrollbars="none" />-->
+
+        <LinearLayout
+            android:id="@+id/popwindow_calendar_swichLay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="6dp">
+
+            <ImageView
+                android:id="@+id/popwindow_calendar_lastMonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/arrow_last_bg"/>
+
+            <TextView
+                android:id="@+id/popwindow_calendar_dateMonth"
+                style="@style/text_black_style"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:textSize="14sp"
+                android:background="@color/white" />
+
+            <ImageView
+                android:id="@+id/popwindow_calendar_nextMonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrow_next_bg"/>
+        </LinearLayout>
+
+        <com.yunju.app.widget.calendar.KCalendar
+            android:id="@+id/popwindow_calendar_cr"
+            android:layout_width="match_parent"
+            android:layout_height="330dp"
+            android:layout_below="@id/popwindow_calendar_swichLay"
+            android:padding="16dp"/>
+
+        <Button
+            android:id="@+id/popwindow_calendar_submit"
+            style="@style/general_button_style"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="16dp"
+            android:text="确定"/>
+    </RelativeLayout>
+</LinearLayout>

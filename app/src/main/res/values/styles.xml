@@ -1,0 +1,89 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <!--<item name="colorAccent">@color/colorAccent</item>-->
+    </style>
+    <!-- 主题灰色字体风格 -->
+    <style name="text_gray_style">
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textcolor_light</item>
+    </style>
+    <!-- 主题黑色字体风格 -->
+    <style name="text_black_style">
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textcolor_dark</item>
+    </style>
+    <!-- 主题白色字体风格 -->
+    <style name="text_white_style">
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <!-- 编辑框风格 -->
+    <style name="edit_text_style">
+        <item name="android:paddingLeft">6dp</item>
+        <item name="android:textColorHint">#aab1c0</item>
+        <item name="android:textColor">@color/textcolor_dark</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@drawable/bg_edittext_white</item>
+    </style>
+    <!-- Button风格 -->
+    <style name="general_button_style">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:background">@drawable/general_button_bg</item>
+    </style>
+    <style name="general_frame_button_style">
+        <item name="android:height">40dp</item>
+        <item name="android:textColor">@color/press_textcolor_selector</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:background">@drawable/bg_frame_button_selector</item>
+    </style>
+    <!-- 旋转进度对话框 -->
+    <style name="progress_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@null</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="popwindowAnimation" parent="android:Animation">  <!--name为调用这个style动画的名字，自己设置的-->
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item><!-- 进入动画-->
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item><!-- 退出动画-->
+    </style>
+    <style name="def_dragview">
+        <item name="seek_bg_color">#e6e6e6</item>
+        <item name="seek_pb_color">@color/colorPrimary</item>
+        <item name="seek_ball_solid_color">@color/colorPrimary</item>
+        <item name="seek_ball_stroke_color">#e6e6e6</item>
+        <item name="seek_text_color">#666666</item>
+        <item name="seek_text_size">12sp</item>
+    </style>
+
+    <style name="CustomTheme" parent="DefaultCityPickerTheme">
+        <item name="cpCancelTextColor">@color/colorPrimary</item>
+        <item name="cpSearchCursorDrawable">@color/colorPrimary</item>
+        <item name="cpIndexBarNormalTextColor">@color/colorPrimary</item>
+        <item name="cpIndexBarSelectedTextColor">@color/colorPrimary</item>
+        <item name="cpSectionHeight">@dimen/custom_section_height</item>
+        <item name="cpOverlayBackground">@color/colorPrimary</item>
+    </style>
+
+    <style name="CustomAnim">
+        <item name="android:windowEnterAnimation">@anim/custom_push_down_in</item>
+        <item name="android:windowExitAnimation">@anim/custom_push_up_out</item>
+    </style>
+</resources>

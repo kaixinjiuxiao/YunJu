@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/edit_order_titleview"
+        layout="@layout/layout_titleview" />
+
+    <View
+        android:id="@+id/edit_order_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray"
+        android:layout_below="@+id/edit_order_titleview" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/edit_order_line"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="80dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/commit_order_imglogo"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/pic_main" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/commit_order_title"
+                        style="@style/text_black_style"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/commit_order_cuchu"
+                        style="@style/text_black_style"
+                        android:layout_marginTop="6dp"
+                        android:text="整套出租"
+                        />
+
+                    <TextView
+                        android:id="@+id/commit_order_condition"
+                        style="@style/text_black_style"
+                        android:layout_marginTop="6dp"
+                         />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <include layout="@layout/line_view_horizontal" />
+
+            <RelativeLayout
+                android:id="@+id/edit_order_dateLay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/edit_order_date"
+                    style="@style/text_black_style"
+                    android:layout_centerVertical="true"
+
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/edit_order_stayNum"
+                    style="@style/text_black_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@drawable/arrow_right"
+                    />
+            </RelativeLayout>
+
+            <include layout="@layout/line_view_horizontal" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0.5dp"
+                android:background="@color/white"
+                android:paddingLeft="16dp">
+
+                <TextView
+                    style="@style/text_black_style"
+                    android:layout_centerVertical="true"
+                    android:text="房屋套数" />
+
+                <com.yunju.app.widget.AmountView
+                    android:id="@+id/edit_order_amountview_houseNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+
+            <include layout="@layout/line_view_horizontal" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp">
+
+                <TextView
+                    style="@style/text_black_style"
+                    android:layout_centerVertical="true"
+                    android:text="入住人数" />
+
+                <com.yunju.app.widget.AmountView
+                    android:id="@+id/edit_order_amountview_personNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+
+            <include layout="@layout/line_view_horizontal" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp">
+
+                <TextView
+                    style="@style/text_black_style"
+                    android:layout_centerVertical="true"
+                    android:layout_height="match_parent"
+                    android:text="入住人" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    >
+                    <EditText
+                        android:id="@+id/edit_order_name"
+                        style="@style/text_black_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:minWidth="60dp"
+                        android:gravity="right|center_vertical"
+                        android:background="@null"
+                        android:hint="姓名" />
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray"
+                        android:layout_marginLeft="10dp"
+                        />
+                    <ImageView
+                        android:id="@+id/imgAdd"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/ico_xz"
+                        />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <include layout="@layout/line_view_horizontal" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp">
+
+                <TextView
+                    style="@style/text_black_style"
+                    android:layout_centerVertical="true"
+                    android:text="手机号" />
+
+                <EditText
+                    android:id="@+id/edit_order_phone"
+                    style="@style/text_black_style"
+                    android:layout_width="120dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="right|center_vertical"
+                    android:inputType="number"
+                    android:background="@null" />
+            </RelativeLayout>
+
+            <include layout="@layout/line_view_horizontal" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp">
+
+                <TextView
+                    style="@style/text_black_style"
+                    android:layout_centerVertical="true"
+                    android:text="身份证" />
+
+                <EditText
+                    android:id="@+id/edit_order_idNo"
+                    style="@style/text_black_style"
+                    android:layout_width="120dp"
+                    android:layout_alignParentRight="true"
+                    android:gravity="right|center_vertical"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:hint="请填写真实的证件号码" />
+            </RelativeLayout>
+
+            <include layout="@layout/line_view_horizontal" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:layout_marginBottom="8dp"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    android:id="@+id/edit_order_insurance"
+                    style="@style/text_black_style"
+                    android:text="住宿意外险  详情" />
+
+                <TextView
+                    style="@style/text_gray_style"
+                    android:layout_below="@+id/edit_order_insurance"
+                    android:layout_marginTop="6dp"
+                    android:text="最高赔付人民币10万元" />
+
+                <TextView
+                    style="@style/text_gray_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@drawable/arrow_right"
+                    android:text="未添加" />
+            </RelativeLayout>
+
+            <include layout="@layout/line_view_horizontal" />
+
+            <TextView
+                style="@style/text_black_style"
+                android:padding="16dp"
+                android:text="如需发票，请离店后到订单列表页或个人中心开具发票" />
+
+            <include layout="@layout/line_view_horizontal" />
+
+            <TextView
+                style="@style/text_gray_style"
+                android:layout_marginTop="16dp"
+                android:drawableStart="@drawable/dot_blue"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="@string/edit_order_rule1" />
+
+            <TextView
+                style="@style/text_gray_style"
+                android:layout_marginTop="6dp"
+                android:drawableLeft="@drawable/dot_blue"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="@string/edit_order_rule2" />
+
+            <TextView
+                style="@style/text_gray_style"
+                android:layout_marginTop="6dp"
+                android:drawableStart="@drawable/dot_blue"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="@string/edit_order_rule3" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/lay_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/edit_order_price"
+                style="@style/text_black_style"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="" />
+
+            <TextView
+                style="@style/text_gray_style"
+                android:gravity="center"
+                android:text="含押金￥0.00" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/commitOrder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/primary_click_selected"
+            android:gravity="center"
+            android:text="提交订单"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_above="@+id/lay_bottom"
+        android:background="@color/gray" />
+
+</RelativeLayout>

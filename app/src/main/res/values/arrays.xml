@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="user_type">
+        <item>我是租客</item>
+        <item>我是房东</item>
+    </string-array>
+</resources>
